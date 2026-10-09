@@ -1,0 +1,19 @@
+# Dependencias instaladas por npm (se recrean con "npm install")
+node_modules/
+
+# Carpetas de compilación (ej. web/dist del panel React)
+dist/
+build/
+
+# Variables de entorno con secretos (solo se sube .env.example)
+.env
+
+# Base de datos SQLite generada al arrancar (se recrea sola)
+database/riego.db
+database/*.db
+database/*.db-*
+
+# Registros y archivos del sistema
+*.log
+.DS_Store
+Thumbs.db

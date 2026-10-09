@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API REST del Sistema de Riego IoT (Node.js + TypeScript + Express)",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning --import tsx src/index.ts",
+    "dev": "node --disable-warning=ExperimentalWarning --watch --import tsx src/index.ts",
+    "db:revisar": "node --disable-warning=ExperimentalWarning --import tsx src/scripts/revisarBD.ts",
+    "db:reiniciar": "node --disable-warning=ExperimentalWarning --import tsx src/scripts/revisarBD.ts --reiniciar",
+    "verificar": "tsc --noEmit"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

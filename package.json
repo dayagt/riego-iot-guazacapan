@@ -1,0 +1,16 @@
+{
+  "name": "riego-iot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prototipo del Sistema inteligente de riego (Guazacapán, Santa Rosa) - UMG",
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "backend": "npm run start -w backend",
+    "backend:dev": "npm run dev -w backend",
+    "db:revisar": "npm run db:revisar -w backend",
+    "db:reiniciar": "npm run db:reiniciar -w backend",
+    "verificar": "npm run verificar -w backend"
+  }
+}
